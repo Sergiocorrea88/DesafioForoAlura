@@ -1,0 +1,11 @@
+package com.desafio.alura.foro.domain.curso.dto;
+
+import com.desafio.alura.foro.domain.curso.Categoria;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+public record CrearCursoDTO(
+        @NotBlank String name,
+        @NotNull Categoria categoria) {
+
+}
